@@ -80,6 +80,92 @@ footer {
     text-align: center;
     background-color: darkmagenta;
 }
+
+/* GRID AREA */
+
+.gridPadre {
+    display: grid;
+    grid-template-areas:
+    "encabezado"
+    "encabezado"
+    "main"
+    "main"
+    "footer"
+    "footer";
+}
+
+header {
+    grid-area: encabezado;
+}
+
+.mainIndex {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media (min-width:576px) {
+   .gridPadre {
+    display: grid;
+    grid-template-areas: 
+    "encabezado"
+    "main"
+    "footer";
+   }
+}
+
+@media (min-width:768px) {
+    .gridPadre {
+        display: grid;
+        grid-template-areas: 
+        "encabezado"
+        "main"
+        "footer";
+    }
+}
+    @keyframes titulo{
+        25%{
+          background-color: aliceblue;
+    }
+        50%{
+          background-color: aqua;
     
+    }
+     100%{
+       background-color: deeppink;
+     }
+    }
 
+    .titulo{
+        animation-name: titulo;
+        animation-duration: 5s;
+        animation-delay: 0s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
 
+    }
+
+    @keyframes tituloSer{
+        25% {
+            background-color: black;
+        }
+        50%{
+            background-color: aqua;
+        }
+        75%{
+            background-color: deeppink;
+        }
+    
+    }
+
+    .tituloSer{
+        animation-name: tituloSer;
+        animation-duration: 3s;
+        animation-delay: 0s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
