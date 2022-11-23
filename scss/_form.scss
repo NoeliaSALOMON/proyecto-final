@@ -1,0 +1,12 @@
+
+    .formulario {
+        border: 6px dashed aquamarine;
+        padding: 20px;
+        margin: 20px;
+       margin-left:  300px;
+       margin-right: 300px;
+       
+       &:hover{
+        background-color: hotpink;
+       }
+    }

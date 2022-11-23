@@ -1,0 +1,46 @@
+
+/*MOBILE FIRST*/
+
+#header{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: none;
+    
+}
+.nav{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-self: center;
+    margin: none;
+}
+   
+.mainIndex {
+   display: grid ;
+   justify-self:center;
+   margin:none
+}
+
+footer {
+    justify-self: center;
+    margin: none;
+}
+
+
+
+body {
+   @media (min-width:768px) {
+      
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+  
+   }
+
+@media (min-width:1280px) {
+
+grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+}
+
+

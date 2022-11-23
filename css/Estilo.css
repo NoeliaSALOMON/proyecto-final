@@ -1,171 +1,163 @@
-h1 {
-    color: gold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 56px;
-    font-weight: 700px;
-    text-align: center;   
-}  
-
-a {
-    text-align: center;
-    text-transform: uppercase;
-    color: deeppink;
-    text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-left: 20px;
-}
-
 header {
-    background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    color: aqua;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aqua;
+}
+header h1 {
+  color: gold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 56px;
+  font-weight: 700px;
+  text-align: center;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  text-align: center;
+  text-transform: uppercase;
+  color: deeppink;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 20px;
 }
 
 body {
-    color: deeppink;
-    background-color: black;
-    text-align: center;
+  color: deeppink;
+  background-color: black;
+  text-align: center;
 }
-.item {
-    display: inline-block;
+body .item {
+  color: deeppink;
+  display: inline-block;
 }
 
-li {
-    list-style-type: none;
+@keyframes titulo {
+  25% {
+    background-color: aliceblue;
+  }
+  50% {
+    background-color: aqua;
+  }
+  100% {
+    background-color: deeppink;
+  }
+}
+.titulo {
+  animation-name: titulo;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes tituloSer {
+  25% {
+    background-color: black;
+  }
+  50% {
+    background-color: aqua;
+  }
+  75% {
+    background-color: deeppink;
+  }
+}
+.tituloSer {
+  animation-name: tituloSer;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 main {
-    background-color: black;
-    background-position: center;
-     text-align: center;    
+  background-color: black;
+  background-position: center;
+  text-align: center;
 }
-.contenedorUno {
-    border: 5px blueviolet double;
-    padding: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-main {
-    border: 6px aquamarine dashed;
-    padding: 20px;
-    margin: 20px;
-   margin-left:  300px;
-   margin-right: 300px;  
+main .contenedorUno {
+  border: 5px;
+  padding: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
-.contenedorCuatro {
-    width:  180px;
+main .contenedorCuatro {
+  width: 180px;
 }
-
-.parrafo {
-     font-size: 40px;
-     font-weight: 400px;
-}
-
- h2 {
-        
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     text-align: center;
-     font-weight: bold;
-     color: aqua;
-}
-
-.contenedorDos {
-    width: 600px;
-}
- 
-footer {
-    color: aliceblue;
-    text-align: center;
-    background-color: darkmagenta;
-}
-
-/* GRID AREA */
-
-.gridPadre {
-    display: grid;
-    grid-template-areas:
-    "encabezado"
-    "encabezado"
-    "main"
-    "main"
-    "footer"
-    "footer";
-}
-
-header {
-    grid-area: encabezado;
+main .contenedorCuatro .parrafo {
+  font-size: 40px;
+  font-weight: 400px;
 }
 
 .mainIndex {
-    grid-area: main;
+  border: 6px aquamarine dashed;
+  padding: 20px;
+  margin: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.mainIndex li {
+  list-style-type: none;
+}
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  font-weight: bold;
+  color: aqua;
+}
+
+.item {
+  display: inline-block;
+}
+
+.contenedorDos {
+  width: 600px;
 }
 
 footer {
-    grid-area: footer;
+  color: aliceblue;
+  text-align: center;
+  background-color: darkmagenta;
 }
 
-@media (min-width:576px) {
-   .gridPadre {
-    display: grid;
-    grid-template-areas: 
-    "encabezado"
-    "main"
-    "footer";
-   }
+.formulario {
+  border: 6px dashed aquamarine;
+  padding: 20px;
+  margin: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.formulario:hover {
+  background-color: hotpink;
 }
 
-@media (min-width:768px) {
-    .gridPadre {
-        display: grid;
-        grid-template-areas: 
-        "encabezado"
-        "main"
-        "footer";
-    }
+/*MOBILE FIRST*/
+#header {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: none;
 }
-    @keyframes titulo{
-        25%{
-          background-color: aliceblue;
-    }
-        50%{
-          background-color: aqua;
-    
-    }
-     100%{
-       background-color: deeppink;
-     }
-    }
 
-    .titulo{
-        animation-name: titulo;
-        animation-duration: 5s;
-        animation-delay: 0s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
+.nav {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-self: center;
+  margin: none;
+}
 
-    }
+.mainIndex {
+  display: grid;
+  justify-self: center;
+  margin: none;
+}
 
-    @keyframes tituloSer{
-        25% {
-            background-color: black;
-        }
-        50%{
-            background-color: aqua;
-        }
-        75%{
-            background-color: deeppink;
-        }
-    
-    }
+footer {
+  justify-self: center;
+  margin: none;
+}
 
-    .tituloSer{
-        animation-name: tituloSer;
-        animation-duration: 3s;
-        animation-delay: 0s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-    }
+/*# sourceMappingURL=estilo.css.map */
