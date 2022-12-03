@@ -135,29 +135,58 @@ footer {
   background-color: hotpink;
 }
 
-/*MOBILE FIRST*/
-#header {
+/*mobile first*/
+#body_grid {
   display: grid;
-  grid-template-columns: 1fr;
-  margin: none;
+  grid-area: auto;
+  justify-self: center;
+  align-items: center;
+}
+
+.titulo {
+  justify-self: center;
+  align-items: center;
+}
+
+.header {
+  justify-self: center;
+  align-items: center;
 }
 
 .nav {
   display: grid;
-  grid-template-columns: auto auto auto;
   justify-self: center;
-  margin: none;
+  align-items: center;
 }
 
-.mainIndex {
-  display: grid;
+.item {
   justify-self: center;
-  margin: none;
+  align-items: center;
 }
 
-footer {
+.historia {
   justify-self: center;
-  margin: none;
+  align-items: center;
+}
+
+.footer {
+  justify-self: center;
+  align-items: center;
+}
+
+/*tablet*/
+@media (min-width: 768) {
+  .nav {
+    grid-template-columns: auto;
+    display: flex;
+  }
+}
+/*destok*/
+@media (min-width: 1028) {
+  .nav {
+    grid-template-columns: auto;
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
